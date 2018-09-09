@@ -16,17 +16,18 @@ public class waitingMoreCoins implements State {
     }
 
     public void insertCoin(int coinValue) {
-        System.out.println(gumballMachine.machineType);
         if (gumballMachine.machineType == 2) {
             if (coinValue == 25 && gumballMachine.sum < 50) {
                 gumballMachine.sum = gumballMachine.sum + 25;
                 if (gumballMachine.sum >= 50) {
+                    System.out.println("You inserted a quater");
                     gumballMachine.setState(gumballMachine.getHasQuarterState());
                 }
             } else {
                 System.out.println("You cannot insert this coin");
             }
         } else {
+            System.out.println("You inserted a coin");
             gumballMachine.sum = gumballMachine.sum + coinValue;
             if (gumballMachine.sum >= 50) {
                 gumballMachine.setState(gumballMachine.getHasQuarterState());

@@ -12,6 +12,7 @@ public class NoQuarterState implements State {
         if (gumballMachine.machineType == 1) {
             if (coinValue == 25) {
                 gumballMachine.sum = 25;
+                System.out.println("You inserted a quater");
                 gumballMachine.setState(gumballMachine.getHasQuarterState());
             } else {
                 System.out.println("You inserted wrong coin");
@@ -20,12 +21,14 @@ public class NoQuarterState implements State {
             if (gumballMachine.machineType == 2) {
                 if (coinValue == 25) {
                     gumballMachine.sum = 25;
+                    System.out.println("You inserted a quater");
                     gumballMachine.setState(gumballMachine.getWaitingMoreCoinsState());
                 } else {
                     System.out.println("You inserted wrong coin");
                 }
             } else {
                 gumballMachine.sum = coinValue;
+                System.out.println("You inserted a coin");
                 gumballMachine.setState(gumballMachine.getWaitingMoreCoinsState());
             }
         }
