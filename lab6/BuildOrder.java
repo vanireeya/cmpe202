@@ -1,10 +1,5 @@
 
-/**
- * Write a description of class BuildOrder here.
- *
- * @author (Reeya)
- * @version (V 1.0)
- */
+
 public class BuildOrder
 {
     public static Component getOrder()

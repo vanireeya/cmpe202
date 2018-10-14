@@ -1,10 +1,4 @@
 
-/**
- * Write a description of class OnBottom here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

@@ -1,10 +1,4 @@
 
-/**
- * Write a description of class Composite here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 
 import java.util.ArrayList;
 public class Composite implements Component

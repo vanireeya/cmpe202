@@ -1,10 +1,5 @@
 
-/**
- * Client places builds the order and prints the receipt
- *
- * @author (Reeya )
- * @version (v 1.0)
- */
+
 public class Client
 {
     

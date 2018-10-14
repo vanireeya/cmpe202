@@ -1,10 +1,5 @@
 
-/**
- * Write a description of class StrategyPackingSlip here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+
 import java.text.DecimalFormat;
 public class StrategyPackingSlip implements IStrategyReceipt
 {

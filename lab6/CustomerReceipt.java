@@ -1,10 +1,5 @@
 
-/**
- * Write a description of class CustomerReceipt here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+
 import java.text.DecimalFormat;
 
 import java.util.ArrayList;
