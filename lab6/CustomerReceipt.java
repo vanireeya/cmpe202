@@ -6,8 +6,12 @@
  * @version (a version number or a date)
  */
 import java.text.DecimalFormat;
+
+import java.util.ArrayList;
 public class CustomerReceipt implements IStrategyReceipt
 {
+    
+    
    /**
      * Constructor for objects of class PackingReceipt
      */
@@ -15,6 +19,8 @@ public class CustomerReceipt implements IStrategyReceipt
     {
        
     }
+    
+  
     /**
      * Return receipt contents
      * @param Order to print packing receipt for
@@ -27,7 +33,9 @@ public class CustomerReceipt implements IStrategyReceipt
         DecimalFormat fmt = new DecimalFormat("$0.00");
         order.printReceipt(0);
         //System.out.println(order.printDescription());
-        //System.out.println("  Sub. Total:\t\t" + fmt.format(order.getPrice()));
-        System.out.println("-------------------------------------\n\n\n");
+        
+        
+        System.out.println("\nSub. Total:\t" + fmt.format(order.returnPrice()));
+        System.out.println("-------------------------------------\n");
     }
 }

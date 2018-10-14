@@ -12,9 +12,8 @@ public class BuildOrder
         Composite order = new Composite( "Order" ) ;
         
         
-        order.addChild(new Leaf("Fries", 2.79 ));
         
-        CustomBurger customBurger = new CustomBurger( "LBB",5.59 ) ;
+        CustomBurger customBurger = new CustomBurger( "LBB Burger",5.59 ) ;
         
         OnTop onTopItems=new OnTop("On Top Bun");
         onTopItems.addChild("lettuce");
@@ -36,6 +35,8 @@ public class BuildOrder
         
         // Add Custom Burger to the ORder
         order.addChild( customBurger );
+        
+        order.addChild(new Leaf("Fries", 2.79 ));
         
         
         return order ;

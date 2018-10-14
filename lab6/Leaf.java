@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 public class Leaf implements Component
 {
     private String description ;
-    protected Double price ;
+    public Double price ;
 
     public Leaf ( String d, Double p )
     {
@@ -25,19 +25,30 @@ public class Leaf implements Component
     
     public void printReceipt(int calledBy) {
         //DecimalFormat fmt = new DecimalFormat("0.00");
-        System.out.println( " " + description + " "  ) ;
+        if(calledBy==0){
+            System.out.println("\n"+description+"\t\t$"+price);
+        }else{
+            System.out.println("\n"+description);
+        }
+        
+        
+        //System.out.println( " " + description + " "  ) ;
     }
 
+    public Double returnPrice(){
+        return price;
+    }
+    
     public void addChild(Component c) {
-	    // no implementation
-	}
-
-	public void removeChild(Component c) {
         // no implementation
-	}
+    }
 
-	public Component getChild(int i) {
+    public void removeChild(Component c) {
+        // no implementation
+    }
+
+    public Component getChild(int i) {
         // no implementation
         return null ;
-	}
+    }
 }

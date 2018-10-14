@@ -27,6 +27,7 @@ public class CustomBurger extends Composite
     
     public void printReceipt(int calledBy) {
         if(calledBy==0){
+            System.out.println("\n"+description+"\t$"+price);
             int i=0;
             while(i<customBurger.size()){
                 customBurger.get(i).printReceipt(calledBy);
@@ -37,6 +38,7 @@ public class CustomBurger extends Composite
             
             
             int i=0;
+            System.out.println("\n"+description);
             while(i<3){
                 int j=0;
                 while(j<3){
@@ -67,7 +69,10 @@ public class CustomBurger extends Composite
         
     }
     
-    public ArrayList<Component> getList(){
-        return customBurger ;
+    
+    public Double returnPrice(){
+        return price;
     }
+    
+    
 }

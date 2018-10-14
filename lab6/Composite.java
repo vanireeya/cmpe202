@@ -20,9 +20,10 @@ public class Composite implements Component
     }
 
     public void printReceipt(int calledBy) {
-        System.out.println( description );
+        //System.out.println( description );
         for (Component obj  : components)
         {
+            
             obj.printReceipt(calledBy);
         }
     }
@@ -39,5 +40,14 @@ public class Composite implements Component
         return components.get( i ) ;
     }
     
+    public Double returnPrice(){
+        
+        Double total=0.0;
+        for (Component obj  : components)
+        {
+            total=total+obj.returnPrice();
+        }
+        return total;
+    }
    
 }
