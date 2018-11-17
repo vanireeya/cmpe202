@@ -1,4 +1,4 @@
-package withoutLambda;
+ 
 
 public class Isro implements LandingObserver {
 	@Override

@@ -1,4 +1,4 @@
-package withoutLambda;
+ 
 
 public class Aliens implements LandingObserver {
 	@Override

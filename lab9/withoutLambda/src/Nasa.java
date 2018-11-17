@@ -1,4 +1,4 @@
-package withoutLambda;
+ 
 
 public final class Nasa implements LandingObserver {
 	@Override
