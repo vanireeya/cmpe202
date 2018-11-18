@@ -1,7 +1,7 @@
-### Lab 9
+## Lab 9
 
 
-#### Strategy Pattern
+### Strategy Pattern
 
 - Core Design Pattern implementations:
 
@@ -12,7 +12,7 @@ Strategy pattern is implemented in the original code. Here three strategies are 
 In the lambda way of writing the Strategy pattern, there was no need for three separate classes for the three different strategies. Thus the three strategy classes are eliminated and the strategy behavior is directly written in the context class using lambda function.
 
 
-#### Observer Pattern
+### Observer Pattern
 
 - Core Design Pattern implementations:
 
@@ -24,7 +24,7 @@ Here, after implementation of the lambda function, there was no need for separat
 
 
 
-#### Comparison
+### Comparison between Java Pattern implementation and Java Lambda/Functional Style
 
 Lambda functions enable functions to be treated as method arguments and be passed as block around. This leads to elimination of additional classes and thus gives concise, easy to manage code. 
 
