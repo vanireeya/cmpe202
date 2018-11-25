@@ -10,9 +10,12 @@ While in lab2, using AspectJ and FeatureIDE, configurations are managed in confi
 ### Screenshots of the code:
 
 ###### 1. Crank model with cost of 25cents per gumball
+![alt text](https://github.com/vanireeya/cmpe202/blob/master/lab10/Screenshots/Crank_model_Cost_25.png)
 
 ###### 2. Crank model with cost of 50cents per gumball
+![alt text](https://github.com/vanireeya/cmpe202/blob/master/lab10/Screenshots/Crank_model_Cost_50.png)
 
 ###### 3. Slot  model with cost of 50cents per gumball
+![alt text](https://github.com/vanireeya/cmpe202/blob/master/lab10/Screenshots/Slot_model_Cost_50.png)
 
 
